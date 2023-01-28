@@ -1,0 +1,74 @@
+//Importing Bootstrap Sass file
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding');
+@import url('https://fonts.googleapis.com/css?family=Cousine');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+//@import "css/bootstrap.scss";
+
+
+html, body{
+    height: 90vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+
+.container{
+    & > .row{
+        padding: 0 15%;
+
+        .textTypingArea{
+            background-color: #ffffff;
+            height: auto;
+
+            padding: 1px;
+            padding-bottom: 1rem;
+            margin-top: 6rem;            
+            border-bottom: 1px solid rgba($color: #b3b3b3, $alpha: 0.4);
+            font-family: 'Roboto Mono','Inconsolata', sans-serif;
+            font-size: 40px;
+            font-weight: 400;            
+            color: #6f6f6f;
+            position: relative;
+
+            .cursor{
+                background-color: rgb(25, 124, 191);
+                width: 24.02px;
+                height: 3px;                
+                position: absolute;
+                top: 55px;
+                left: 3px;
+
+                margin-left: 0px;
+            }
+            
+            .line{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                
+                .word{                    
+                    display: flex;
+
+                    .letter{
+                        border-radius: 5px;
+                    }
+                    .correct{
+                        background-color: #e0ffc0;
+                        //padding: 3px;
+                    }   
+                    .wrong{
+                        background-color: #ffc0c0;
+                    }   
+                }
+            }
+        }
+
+
+
+
+    }
+}
+
+
